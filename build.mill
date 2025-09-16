@@ -9,6 +9,7 @@ object Versions {
     val sjs = "1.19.0"
     val sjsdom = "2.8.0"
     val laminar = "17.2.1"
+    val utest = "0.9.1"
 }
 
 object www extends ScalaJSModule {
@@ -23,7 +24,7 @@ object www extends ScalaJSModule {
   )
 
   object test extends ScalaJSTests with TestModule.Utest {
-    def utestVersion = "0.8.5"
+    def utestVersion = Versions.utest
     def moduleKind = ModuleKind.NoModule
   }
 
